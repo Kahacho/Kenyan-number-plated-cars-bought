@@ -12,17 +12,14 @@ a<-data.frame(c(LETTERS[c(-9,-15)]))
 #The second elements of a Kenyan number plate
 b<-which(a[1:nrow(a),]==n_1[2])
 c<-which(a[1:nrow(a),]==n_2[2])
-Element_2<-abs(b-c)
 
 #The third elements of a Kenyan number plate
 d<-which(a[1:nrow(a),]==n_1[3])
 e<-which(a[1:nrow(a),]==n_2[3])
-Element_3<-abs(d-e)
 
 #The seventh elements of a Kenyan number plate
 f<-which(a[1:nrow(a),]==n_1[7])
 g<-which(a[1:nrow(a),]==n_2[7])
-Element_7<-abs(f-g)
 
 #The numeric elements in a Kenyan number plate
 n1<-as.numeric(paste(n_1[4:6],collapse=""))
